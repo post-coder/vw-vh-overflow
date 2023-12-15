@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset */
+
+.row {
+    display: flex;
+    height: 100vh;
+}
+
+
+main {
+    flex-grow: 1;
+    position: relative;
+
+}
+
+main #player {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 12px ;
+
+    border-top: 2px solid red;
+
+    background-color: #00000060;
+    color: white
+}
+
+main img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    /* 
+    questa proprietà funziona SOLO con gli elementi <img>, fate attenzione infatti
+    che il selettore alla fine abbia l'elemento "img"
+
+    questa proprietà non si eredita
+    
+    l'immagine visualizzata non deve strechare, ma si dovrà adattare, 
+    riempendo quindi l'ingombro del suo elemento ma visualizzandosi correttamente,
+    senza stretch 
+    */
+    object-fit: cover;
+
+}
+
+aside {
+    width: 500px;
+
+    overflow-y: auto;
+}
+
+aside .suggested {
+    display: flex;
+    gap: 12px;
+
+    padding: 10px;
+}
+
+aside .suggested img {
+    width: 200px;
+}
+
+aside .suggested .title {
+    font-size: 1.8em;
+}

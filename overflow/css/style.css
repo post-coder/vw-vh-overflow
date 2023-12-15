@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset */
+
+.container {
+    padding: 100px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+
+    border: solid 1px red;
+}
+
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+
+    padding: 10px;
+
+    overflow-y: auto;
+}
